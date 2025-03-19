@@ -1,0 +1,41 @@
+version: 0.0.4
+type: plugin
+author: userdsr
+name: text2sql
+label:
+  en_US: text2sql
+  ja_JP: text2sql
+  zh_Hans: text2sql
+  pt_BR: text2sql
+description:
+  en_US: This tool is used to execute SQL in an existing database.
+  ja_JP: This tool is used to execute SQL in an existing database.
+  zh_Hans: This tool is used to execute SQL in an existing database.
+  pt_BR: This tool is used to execute SQL in an existing database.
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+    endpoint:
+      enabled: true
+plugins:
+  tools:
+    - provider/database.yaml
+  endpoints:
+    - provider/endpoint.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+created_at: 2024-12-24T14:34:18.7972424+08:00
+verified: false

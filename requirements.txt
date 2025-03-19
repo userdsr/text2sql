@@ -1,0 +1,6 @@
+dify_plugin~=0.0.1b72
+records[all]~=0.6.0
+pymysql~=1.1.1
+pymssql=2.3.2
+psycopg2-binary~=2.9.10
+cryptography~=44.0.2
